@@ -33,6 +33,25 @@ en:
   layouts:
     application:
       title: "ManagerLibrary09"
+    header:
+      title_logo: "Wellcome To Library"
+      tab_home: "Home"
+      user: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      tab_login: "Login"
+      categories: "Categories"
+      author: "Author"
+      tab_sigin: "Sign up"
+      apptitle: "Manager Library"
+    footer:
+      title_about: "Facebook"
+      title_contact: "Twitter"
+  static_pages:
+    home:
+      home_welcome: "Wellcome To My Library"
+
   public:
     404:
       title: "The page you were looking for doesn't exist (404)"
@@ -48,4 +67,3 @@ en:
       title: "We're sorry, but something went wrong (500)"
       h1: "We're sorry, but something went wrong."
       p: "If you are the application owner check the logs for more information."
-

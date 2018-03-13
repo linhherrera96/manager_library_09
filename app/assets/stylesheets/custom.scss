@@ -1,0 +1,50 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+$pink: #FF99FF;
+
+/* header */
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: $pink;
+    text-decoration: none;
+  }
+}
+h1{
+ float: center;
+ margin-right: 10px;
+ padding-top: 9px;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+
+/* footer */
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid blue;
+  color: blue;
+  a {
+    color: blue;
+    &:hover {
+      color: black;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
