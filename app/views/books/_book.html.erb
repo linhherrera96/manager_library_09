@@ -1,0 +1,10 @@
+<div class="col-sm-4 col-lg-4 col-md-4">
+  <div class="thumbnail">
+    <%= image_tag book.picture.url, class: "img-circle", size: Settings.user.book %>
+    <div class="caption">
+      <h4><%= link_to book.name, book %></h4>
+      <p><%= t("book.author_name") %> <%= book.author.name %></p>
+      <p><%= t("book.description") %><%= book.description %></p>
+    </div>
+  </div>
+</div>

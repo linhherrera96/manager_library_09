@@ -1,0 +1,21 @@
+<%= form_for @book do |f| %>
+        <%= render "shared/error_messages_book" %>
+        <div class="send-button w3layouts agileits">
+          <%= f.label :name%>
+          <%= f.text_field :name, class: "form-control" %>
+        </div>
+        <div class="send-button w3layouts agileits">
+          <%= f.label :description%>
+          <%= f.text_area :description, class: "form-control" %>
+        </div>
+        <div class="send-button w3layouts agileits">
+          <%= f.label :Author%>
+          <%= f.collection_select :author_id, Author.all, :id, :name, class: "form-control" %>
+         </div>
+         <div class="send-button w3layouts agileits">
+         <span class="picture">
+          <%= f.file_field :picture, accept: "image/jpeg,image/gif,image/png" %>
+         </span>
+         </div>
+         <%= f.submit t(".add_book"), class: "btn btn-primary" %>
+<% end %>

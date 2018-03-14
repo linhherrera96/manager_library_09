@@ -1,3 +1,6 @@
 class StaticPagesController < ApplicationController
-  def home; end
+  def home
+    @books = Book.sort_by_alphabet.paginate(page: params[:page])
+    @authors = Author.all
+  end
 end

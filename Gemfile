@@ -34,6 +34,7 @@ group :development do
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "web-console", ">= 3.3.0"
+  gem "fog", "1.42"
 end
 
 gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)

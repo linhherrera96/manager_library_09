@@ -30,6 +30,31 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  book_javascript:
+    alert:
+      pls_choose: "Maximum file size is 5MB. Please choose a smaller file."
+  add_new_book: Add new book
+  authors:
+    new:
+      add_author: Add author
+      add_new_author: Add new author
+    show:
+      all_author: All authors
+    form:
+      name: name
+      birthday: birthday
+      details: details
+  books:
+    create:
+      book_add_success: Book added!
+    form:
+      add_book: Add book
+    index:
+      title: All books
+    new:
+      add_book: Add book
+    show:
+      book_not_found: Book not found!
   layouts:
     application:
       title: "ManagerLibrary09"
@@ -41,16 +66,63 @@ en:
       profile: "Profile"
       settings: "Settings"
       tab_login: "Login"
-      categories: "Categories"
       author: "Author"
       tab_sigin: "Sign up"
       apptitle: "Manager Library"
+      authors: Author
     footer:
       face: "Facebook"
       twitter: "Twitter"
   static_pages:
     home:
       home_welcome: "Wellcome To My Library"
+  book:
+    title: Books
+    book_name: "Name: "
+    author_name: "Author: "
+    pub_name: "Publisher: "
+    cate: "Category: "
+    description: "Description: "
+    raiting: "Ratings: "
+  pub:
+    create_error: Error
+    create_sub: Create
+    create_succ: Author created
+    delete_succ: Delete success
+    error: Error
+    find_error: Not Author
+    title: Author
+    update_sub: Update
+    update_succ: Update success
+    pub_name: Author Name
+    
+  model:
+    book:
+      picture_size: "Should be less than 5MB"
+  author:
+    author_name: Author Name
+    author_birthday: Author birthday
+    author_details: Author details
+  shared:
+    error_messages:
+      error: error
+      form_contain_error: The form contains
+    error_messages_book:
+      error: error
+    form:
+      form_error: The form contains
+      not_found: Not Found
+  form:
+    update_succ: Profile updated
+    user: Users
+    user_error: User error
+    view_profile: view my profile
+    you_sure: You sure?
+    like: "Like"
+  erro:
+    contains: "The form contains"
+    error: "error"
+
   public:
     404:
       title: "The page you were looking for doesn't exist (404)"
@@ -79,7 +151,4 @@ en:
       hello: "Hello %{name} have nice day!!"
     create:
       success: "Welcome to the Library!"
-  shared:
-    erro:
-      contains: "The form contains"
-      error: "error"
+ 

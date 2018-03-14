@@ -1,0 +1,24 @@
+<div class="container1 w3layouts agileits">
+  <%= form_for @author do |f| %>
+    <%= render "shared/messageerr", object: @author %>
+  	
+    <div class="send-button w3layouts agileits">
+  	  <%= f.label t ".name" %>
+  	  <%= f.text_field :name, class: "form-control" %>
+    </div>
+
+    <div class="send-button w3layouts agileits">
+  	  <%= f.label t ".birthday" %>
+  	  <%= f.date_field :birthday, class: "form-control" %>
+    </div>
+
+    <div class="send-button w3layouts agileits">
+    	<%= f.label t ".details" %>
+  	  <%= f.text_area :details, class: "form-control" %>
+    </div>
+
+    <div class="send-buttonn w3layouts agileits">
+ 	    <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

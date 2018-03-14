@@ -1,0 +1,22 @@
+<div class="container">
+  <h4><%= link_to t("pub.create_sub"), new_book_url %></h4>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="listbook"><%= t "book.book_name" %></th>
+        <th class="listbook"><%= t "book.author_name" %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @books.each do |book| %>
+        <tr>
+          <td><%= link_to book.name, book %></td>
+          <td><%= book.author.name %></td>
+          <td><%= link_to t("form.delete"), book, method: :delete, data: {confirm: t("form.you_sure")} %></td>
+          <td><%= link_to t("form.edit"), edit_book_path(book)  %></td>
+          <td></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

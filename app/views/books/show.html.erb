@@ -1,0 +1,18 @@
+<div class="container">
+<% provide(:title, @book.name) %>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag @book.picture.url, class: "img-square", size: Settings.user.book_show %>
+      </div>
+    <div class="col-md-8">
+      <ul class = "book-show">
+        <div class="send-button w3layouts agileits">
+          <li class="col-md-8"> <%= t("book.book_name") %><%= @book.name %>  </li>
+          <li><%= t("book.author_name") %> <%= @book.author.name %> </li>
+          <li class="col-md-8"><%= t("book.description") %><%= @book.description %> </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>

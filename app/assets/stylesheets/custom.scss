@@ -22,6 +22,42 @@ h1{
  padding-top: 9px;
  font-weight: bold;
  text-transform: uppercase;
+ text-align: center;
+}
+mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+book-show{
+  margin-left: 45px;
+}
+.create{
+  color: pink;
+  font-weight: bold;
+
+}
+.birthday{
+  text-align: center;
+}
+
+
+.img-rounded{
+  margin-left: 50px;
+}
+
+
+/* universal */
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
 }
 
 /* footer */
@@ -71,4 +107,9 @@ footer {
   .form-control {
     color: blue;
   }
+}
+.listbook{
+  color: pink;
+  font-weight: bold;
+  text-align: center;
 }

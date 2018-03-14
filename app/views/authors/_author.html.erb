@@ -1,0 +1,25 @@
+<div class="container">
+  <%= will_paginate %>
+  <h4><%= link_to t("pub.create_sub"), new_author_url %></h4>
+  <table class="table table-striped">
+    <thead>
+      <tr class= "create">
+        <th class= "birthday"><%= t "author.author_name" %></th>
+        <th class= "birthday"><%= t "author.author_birthday" %></th>
+        <th class= "birthday"><%= t "author.author_details" %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @authors.each do |author| %>
+        <tr>
+          <td><%= link_to author.name, author %></td>
+          <td><%= link_to author.birthday, author %></td>
+          <td><%= link_to author.details, author %></td>
+          <td><%= link_to t("form.delete"), author, method: :delete, data: {confirm: t("form.you_sure")} %></td>
+          <td><%= link_to t("form.edit"), edit_author_path(author) %></td>
+          <td></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

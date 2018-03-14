@@ -2,4 +2,8 @@ user:
   name_length: 50
   email_length: 255
   password_length: 6
-  vavatar_size: 80
+  vavatar_size: 15
+  picture_size: 5
+  book_show: 100
+book:
+  picture_size: 5
